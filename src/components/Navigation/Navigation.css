@@ -1,0 +1,43 @@
+.Navigation{
+   height : 3rem;
+   display : grid;
+   grid-template-columns : 1fr 1fr;
+   width : 30%;
+   margin-left : auto;
+   grid-column-gap : 20%;
+   margin-right : 30px;
+   align-items : center;
+}
+
+.Navigation a{
+    margin : 0;
+    color : white;
+    font-weight : bold;
+    
+    flex : 1;
+    text-decoration: none;
+    font-size : 1.15rem;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    justify-content : center;
+   
+}
+/* 
+.Navigation a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .Navigation a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  } */
