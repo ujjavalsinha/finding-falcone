@@ -1,0 +1,44 @@
+.Result .success-message{
+    color : white;
+    font-size : 20px;
+}
+
+.Result .success{
+    color : rgb(102,203,108);
+    font-weight : 700;
+    font-size : 28px;
+}
+
+.Result .time-taken {
+    color : white;
+    font-size :35px;
+
+}
+
+.Result .planet-found{
+    font-size : 35px;
+    color : white;
+}
+
+.Result .planet-name{
+    color : rgb(102,203,108);
+    font-weight : bold;
+}
+
+.Result .start-again{
+    width : 10rem;
+    font-size : 1rem;
+    background-color : rgb(46,90,231);
+    height : 2.5rem;
+    justify-self : center;
+    border : none;
+    border-radius : 8px;
+    cursor: pointer;
+    color : white;
+}
+
+.Result .fail-message{
+    color : red;
+    font-weight : 700;
+    font-size : 28px;
+}
