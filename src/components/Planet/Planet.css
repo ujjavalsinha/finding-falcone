@@ -1,0 +1,153 @@
+.Planet {
+    width : 100%;
+}
+.Planet .planet-section{
+    display : grid;
+    position : relative;
+    width : 100%;
+    grid-template-columns : 6fr 1fr;
+    grid-template-rows : 40px;
+    /* border : 1px solid #41B3A3; */
+    background-color : rgb(43,47,58);
+    grid-column-gap : 10px;
+    box-sizing: border-box;
+    border-radius : 5px;
+    
+}
+
+.Planet .selected-planet-text{
+    grid-column : 1 / 2;
+    align-self :center;
+    justify-self : start;
+    margin-left : 10px;
+    color : white;
+}
+
+.Planet .chevron-icon{
+    grid-column : 2 / 3;
+    align-self : center;
+    width : 15px ;
+    height : 15px;
+    background-color: white;
+    border-radius : 50%;
+}
+
+.Planet .planet-dropdown{
+    position : absolute;
+    width : 100%;
+}
+.Planet .input-chevron{
+    position : absolute;
+    top : 13px;
+    right : 8%;
+    width : 15px ;
+    background-color: white;
+    height : 15px;
+}
+.Planet .dropdown{
+    /* border : 1px solid #41B3A3; */
+    display : grid;
+    grid-row-gap : 0;
+    background-color : rgb(51,55,64);
+    border-radius : 5px;
+    margin-top : 5px;
+}
+
+.Planet .dropdown-text{
+    display : flex;
+    align-items : center;
+    padding-left : 10px;
+    margin : 0;
+    height : 30px;
+    flex : 1;
+    font-size : 1rem;
+    color : white;
+}
+
+.Planet .dropdown-text:hover{
+    background-color : rgb(42,43,50)
+}
+.Planet .planet-input{
+    box-sizing: border-box;
+    left : 0;
+    top : 0;
+    width : 100%;
+    height : 40px;
+    font-size : 1rem;
+    padding : 10px;
+}
+.Planet .planet-input:focus{
+    border : 1px solid rgb(47,79,185);
+    box-shadow : 0 0 3px 2px rgb(37,53,101);
+}
+
+.Planet .vehicle-list{
+    margin-top : 5px;
+    display : flex;
+    grid-template-columns : 1fr;
+    flex-direction : column;
+    border-radius : 5px;
+    background-color : rgb(49, 53, 66);
+}
+
+.Planet .vehicle-detail{
+    display : grid;
+    grid-template-columns : 5fr 1fr;
+    cursor: pointer;
+    height : 35px;
+    background-color : rgb(44,47,57);
+}
+
+.Planet .vehicle-detail:hover{
+    background-color : rgb(42,43,50);
+}
+
+.Planet .planet-input{
+    /* border : 1px solid #41B3A3; */
+    border : none;
+    border-radius : 5px;
+    
+}
+.Planet .vehicle-name{
+    margin : 0;
+    align-self : start;
+    grid-column : 1 / 2;
+    color : white;
+}
+
+.Planet .vehicle-count {
+    margin : 0;
+    grid-column : 2 / 3;
+    align-self : center;
+    color : white;
+}
+
+.Planet .selected-vehicle{
+    display : grid;
+    grid-template-columns : 1fr;
+    background-color :rgb(102,203,108);;
+    margin-top : 10px;
+    height : 35px;
+    border-radius : 5px;
+}
+
+.Planet .transparent{
+    pointer-events: none;
+    opacity: 50%;
+}
+.Planet .selected-vehicle-name{
+    grid-column : 1 / 2;
+    align-self : start;
+    margin : 0;
+    color : white;
+    align-self: center;
+    justify-self : start;
+    margin-left : 10px;
+}
+
+/* .Planet .close-icon{
+    grid-column : 2 / 3;
+    align-self : center;
+    height : 15px;
+    width : 15px;
+} */
