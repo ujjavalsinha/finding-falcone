@@ -1,0 +1,133 @@
+.Home{
+    display : grid;
+    grid-template-columns : 1fr;
+    grid-template-rows : 3fr 2fr 5fr 2fr 3fr;
+    height : 100vh;
+    position : relative;
+    z-index : 2;
+
+}
+.Home .heading-container{
+    grid-row : 1 / 2;
+    align-self : center;
+}
+.Home .heading{
+    position : relative;
+    top : 0;
+    left : 0;
+    
+    display : block;
+    height : 100%;
+    margin : 0;
+    padding : 0;
+    font-size : 80px;
+    letter-spacing: 1;
+    font-weight : bold;
+    color : rgb(212,214,216);
+}
+
+
+
+.Home .text{
+    align-self : center;
+    font-size : 2rem;
+    grid : 2 / 3;
+    z-index : 2;
+    position : relative;
+    color : rgb(212,214,216);
+}
+.Home .Planets{
+    grid-row : 3 / 4;
+    width : 80%;
+    justify-self : center;
+    grid-column : 1 / 2;
+    display : grid;
+    grid-template-columns : 1fr 1fr 1fr 1fr;
+    grid-gap : 25px;
+}
+
+.Home .total-time {
+    grid-row : 4 / 5;
+    font-size : 50px;
+    color : white;
+}
+
+.Home .time{
+    color : rgb(102,203,108);
+}
+
+.Home .find-button{
+    grid-row : 5 / 6;
+    width : 10rem;
+    font-size : 1rem;
+    background-color : rgb(46,90,231);
+    height : 2.5rem;
+    justify-self : center;
+    border : none;
+    border-radius : 8px;
+    cursor: pointer;
+    color : white;
+}
+
+.Home .find-button:disabled{
+    cursor :not-allowed;
+    opacity : 50%;
+    
+}
+
+@keyframes example {
+    0% {
+        transform: translateY(100px);
+    }
+
+    100%{
+        transform : translateY(0px);
+    }
+}
+
+@keyframes leftSlide {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform : translateX(0px);
+    }
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
