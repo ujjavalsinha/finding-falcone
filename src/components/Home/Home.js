@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 
 import Planet from '../Planet/Planet'
 import Result from '../Result/Result'
-import ErrorBoundary from '../ErrorBoundary/ErrorBoundary'
 import './Home.css'
 
 const Home = props => {
@@ -64,7 +63,7 @@ const Home = props => {
     }
 
     return (
-        <ErrorBoundary >
+        
         <div className="Home">
             <div className='heading-container'><h1 className='heading'>Finding Falcone</h1></div>
                 {!Object.keys(status).length ?
@@ -94,7 +93,7 @@ const Home = props => {
                 <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
                 }
         </div>
-        </ErrorBoundary>
+   
     )
 }
 
