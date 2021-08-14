@@ -1,0 +1,46 @@
+.About{
+    height : calc(100vh - 3rem);
+    width : 70%;
+    display : grid;
+    grid-template-rows : 250px 150px 70px auto;
+    margin : auto;
+    grid-row-gap : 0;
+}
+
+.About .find-falcone{
+    width : 70%;
+    font-size : 70px;
+    font-weight : 800;
+    justify-self: start;
+    background-color : white;
+    color : rgb(25,26,41);
+    align-self : center;
+    text-align : left !important;
+}
+
+.About .story-first{
+    margin : 0;
+    color : white;
+    font-size : 25px;
+    text-align : left !important;
+}
+
+.About .task{
+    color : white;
+    font-size : 25px;
+    text-align : left !important;
+    text-decoration: underline;
+}
+
+.About .list-task{
+    color : white;
+    text-align : left !important;
+    list-style :decimal;
+    margin : 0;
+    padding-left : 15px;
+    line-height : 2;
+}
+
+.About .list-task li{
+    text-align : left !important;
+}
