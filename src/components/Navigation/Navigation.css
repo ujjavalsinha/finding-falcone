@@ -1,10 +1,10 @@
 .Navigation{
    height : 3rem;
    display : grid;
-   grid-template-columns : 1fr 1fr;
+   grid-template-columns : 1fr 1fr 1fr;
    width : 30%;
    margin-left : auto;
-   grid-column-gap : 20%;
+   
    margin-right : 30px;
    align-items : center;
 }
@@ -13,15 +13,29 @@
     margin : 0;
     color : white;
     font-weight : bold;
-    
     flex : 1;
     text-decoration: none;
-    font-size : 1.15rem;
+    font-size : 1rem;
     cursor: pointer;
     display: block;
     position: relative;
     justify-content : center;
    
+}
+
+
+.Navigation .about-falcone{
+  width : 11rem;
+  font-size : 1rem;
+  background-color : rgb(46,90,231);
+  height : 2.5rem;
+  justify-content : center;
+  line-height : 2.3;
+  text-align : center;
+  border : none;
+  border-radius : 8px;
+  cursor: pointer;
+  color : white;
 }
 /* 
 .Navigation a:after {
