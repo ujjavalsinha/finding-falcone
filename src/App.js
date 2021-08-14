@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react';
 import { Route } from 'react-router-dom'
 import Home from './components/Home/Home'
 import axios from './axios';
+import About from './components/About/About'
 import Navigation from './components/Navigation/Navigation';
 
 const App = props => {
@@ -89,6 +90,7 @@ const App = props => {
                                 totalTime={totalTime}
                                 setTotalTime={setTotalTime}
                                 onReset={onReset}/>}/>
+      <Route path='/about' component={About}/>
     </div>
   )
 }
