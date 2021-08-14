@@ -5,8 +5,10 @@ import './Navigation.css'
 const Navigation = props => {
     return (
         <div className='Navigation'>
+            <Link to='/about' className='about-falcone' >Who is Falcone?</Link>
             <Link to='/' onClick={props.onReset}>Reset</Link>
             <Link to='/' onClick={props.onReset}>Geek Trust Home</Link>
+            
         </div>
     )
 }
